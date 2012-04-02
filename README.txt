@@ -1,13 +1,13 @@
 Grinnell theme
 ==============
 
-D6 Zen sub-theme for Grinnell.
+D6 Fusion sub-theme for Grinnell.
 
 
 Instructions:
 -------------
 
-- download and enable zen 6.x-2.1 or later
+- download and enable fusion 6.x-1.13 or later
 - navigate to the themes folder and do
 - git clone https://github.com/DGI-GRINNELL/grinnell-theme.git
 - mv grinnell-theme grinnell
@@ -30,3 +30,5 @@ X Secondary links
 
 Notes:
 ------
+
+
