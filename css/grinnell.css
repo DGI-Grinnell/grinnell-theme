@@ -1,0 +1,270 @@
+/* Grinnell main style sheet */
+
+/* general */
+
+body
+{
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a
+{
+  color: #cf2c27;
+}
+
+a:hover
+{
+  
+}
+
+a.active
+{
+  color: #cf2c27;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  
+}
+
+h1
+{
+  
+}
+
+h2
+{
+  font-weight: normal;
+}
+
+h3
+{
+  font-weight: normal;
+}
+
+h4
+{
+  
+}
+
+h5
+{
+  
+}
+
+h6
+{
+  
+}
+
+table
+{
+  
+}
+
+table tr
+{
+  width: 100%;
+}
+
+table th,
+table td
+{
+  
+}
+
+div.content-messages div.messages,
+div.content-help div.help
+{
+  border-width: 1px;
+}
+
+
+
+
+/* Header Top */
+
+#header-top
+{
+  width: 100%;
+  height: 30px;
+  background: #000;
+  
+}
+
+a.grinnell-home
+{
+  float: left;
+  width: 227px;
+  height: 28px;
+  background: url('../images/grinnell-logo.png') center top no-repeat transparent;
+  margin: 0px 0px 0px 10px;
+  padding: 0px 0px 0px 0px;
+  color: #000;
+  
+  /*  http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#secondary-menu
+{
+  float: right;
+  width: auto;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+
+#secondary-menu
+{
+  margin: 7px 0px 0px 0px;
+  color: #ccc;
+}
+
+#secondary-menu ul
+{
+  
+}
+
+#secondary-menu ul li
+{
+  padding: 0px 5px 0px 5px;
+}
+
+#secondary-menu ul li a
+{
+  color: #ccc;
+}
+
+#secondary-menu ul li a:hover
+{
+  
+}
+
+#secondary-menu ul li a.active
+{
+  color: #cf2c27;
+}
+
+/* Header */
+
+#header-site-info
+{
+  width: 100%;
+  height: 100px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  
+  background: url('../images/header-bg-100.png') center top repeat-x transparent;
+}
+
+#site-name-wrapper
+{
+  float: left;
+  margin: 40px 0px 0px 20px;
+}
+
+#site-name,
+#site-name a
+{
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 200;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #ddd;
+}
+
+#logo
+{
+  float: left;
+  margin: 30px 0px 0px 20px;
+}
+
+
+/* Navigation */
+
+#navigation
+{
+  float: left;
+  width: 100%;
+  height: 33px;
+  background: #e6e6e6;
+  
+}
+
+#primary-menu
+{
+  float: left;
+  width: auto;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+#primary-menu-inner
+{
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+#primary-menu ul
+{
+  
+}
+
+#primary-menu ul li
+{
+  
+}
+
+#primary-menu ul li a
+{
+  font-size: 13px;
+  line-height: 18px;
+  color: #333;
+  height: 24px; /* 32px */
+  margin: 0px 0px 0px 0px;
+  padding: 8px 15px 0px 15px;
+}
+
+#primary-menu ul li a:hover
+{
+  color: #cf2c27;
+  background: #efefef;
+}
+
+#primary-menu ul li a.active
+{
+  color: #cf2c27;
+  background: #f5f5f5;
+}
+
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul
+{
+  top: 33px;
+}
+
+#primary-menu ul li li
+{
+  background: #f6f6f6;
+}
+
+#primary-menu ul li li a:hover
+{
+  background: #efefef;
+}
+
+
+/* Main */
+
+#main
+{
+  margin-top: 15px;
+}
+
+/* Footer */
+
+
+/* Contact Form */

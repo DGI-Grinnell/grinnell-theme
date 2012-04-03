@@ -32,3 +32,12 @@ Notes:
 ------
 
 
+To do:
+------
+
+- theme setting which enables the islandora search form
+- color module integration
+-- link color
+-- search button color(s)
+- theme setting which enables the contact form in the footer
+- general theming

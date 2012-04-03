@@ -27,7 +27,12 @@
     </div>
 
     <div id="header-group" class="header-group row clearfix <?php print $grid_width; ?>">
-      <?php print theme('grid_block', theme('links', $secondary_links), 'secondary-menu'); ?>
+      
+      <div id="header-top">
+        <?php print $grinnell_home; ?>
+        <?php print theme('grid_block', theme('links', $secondary_links), 'secondary-menu'); ?>
+      </div>
+      
       <?php print theme('grid_block', $search_box, 'search-box'); ?>
 
       <?php if ($logo || $site_name || $site_slogan): ?>
@@ -53,7 +58,11 @@
       <?php endif; ?>
 
       <?php print $header; ?>
-      <?php print theme('grid_block', $primary_links_tree, 'primary-menu'); ?>
+      
+      <div id="navigation">
+        <?php print theme('grid_block', $primary_links_tree, 'primary-menu'); ?>
+      </div>
+    
     </div><!-- /header-group -->
 
     <div id="main" class="main row clearfix <?php print $grid_width; ?>">
