@@ -339,6 +339,41 @@ a.grinnell-home
 /* Footer */
 
 
+
+/* Footer separator */
+
+#footer-contact
+{
+  width: 100%;
+}
+
+#footer-contact #contact-form-drawer
+{
+  display: none;
+}
+
+#footer-contact .contact-form-link-wrapper
+{
+  width: 100%;
+  text-align: center;
+}
+
+#footer-contact .contact-form-link-wrapper a
+{
+  
+}
+
+#footer-contact .form-item
+{
+
+}
+
+#footer-contact #edit-message-wrapper
+{
+  
+}
+
+
 /* Footer separator */
 
 #footer-separator
