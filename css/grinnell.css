@@ -100,10 +100,9 @@ a.grinnell-home
   background: url('../images/grinnell-logo.png') center top no-repeat transparent;
   margin: 0px 0px 0px 10px;
   padding: 0px 0px 0px 0px;
-  color: #000;
   
   /*  http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement */
-  text-indent: 100%;
+  text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -257,11 +256,100 @@ a.grinnell-home
 }
 
 
+#navigation .islandora-solr-search-simple
+{
+  float: right;
+  width: auto;
+  margin: 3px 10px 0px 0px;
+}
+
+#navigation .islandora-solr-search-simple #edit-islandora-simple-search-query-wrapper
+{
+  float: left;
+  width: 180px;
+  height: 27px;
+  margin: 0px 0px 0px 0px;
+}
+
+#navigation .islandora-solr-search-simple #edit-islandora-simple-search-query-wrapper input
+{
+  float: left;
+  width: 180px;
+  height: 23px; /* 27px */
+  padding: 2px 2px 2px 7px;
+  border: 0px;
+  
+  color: #999;
+  font-size: 12px;
+  font-style: italic;
+
+  -webkit-box-shadow: 2px 10px 20px -10px #999 inset; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+     -moz-box-shadow: 2px 10px 20px -10px #999 inset; /* FF3.5 - 3.6 */
+          box-shadow: 2px 10px 20px -10px #999 inset; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+  outline: none;
+
+}
+
+#navigation .islandora-solr-search-simple .form-submit
+{
+  float: left;
+  width: 35px;
+  height: 27px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  
+  
+  border: 0px;
+  
+  background-color: #cd2b26;
+  background: url('../images/magnifier.png') 0px 0px no-repeat,  -webkit-gradient(linear, left top, left bottom, from(#cd2b26), to(#7c0505)); /* Saf4+, Chrome */
+  background: url('../images/magnifier.png') 0px 0px no-repeat,  -webkit-linear-gradient(top, #cd2b26, #7c0505); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background: url('../images/magnifier.png') 0px 0px no-repeat,     -moz-linear-gradient(top, #cd2b26, #7c0505); /* FF3.6 */
+  background: url('../images/magnifier.png') 0px 0px no-repeat,      -ms-linear-gradient(top, #cd2b26, #7c0505); /* IE10 */
+  background: url('../images/magnifier.png') 0px 0px no-repeat,       -o-linear-gradient(top, #cd2b26, #7c0505); /* Opera 11.10+ */
+  background: url('../images/magnifier.png') 0px 0px no-repeat,          linear-gradient(to bottom, #cd2b26, #7c0505);
+  
+  /*  http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement */
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#navigation .islandora-solr-search-simple .form-submit:active
+{
+  background-color: #c4413d;
+  background: url('../images/magnifier.png') 0px 0px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#c4413d), to(#8c2726)); /* Saf4+, Chrome */
+  background: url('../images/magnifier.png') 0px 0px no-repeat, -webkit-linear-gradient(top, #c4413d, #8c2726); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background: url('../images/magnifier.png') 0px 0px no-repeat,    -moz-linear-gradient(top, #c4413d, #8c2726); /* FF3.6 */
+  background: url('../images/magnifier.png') 0px 0px no-repeat,     -ms-linear-gradient(top, #c4413d, #8c2726); /* IE10 */
+  background: url('../images/magnifier.png') 0px 0px no-repeat,      -o-linear-gradient(top, #c4413d, #8c2726); /* Opera 11.10+ */
+  background: url('../images/magnifier.png') 0px 0px no-repeat,         linear-gradient(to bottom, #c4413d, #8c2726);
+
+}
+
 /* Main */
 
 #main
 {
   margin-top: 15px;
+}
+
+/* Footer separator */
+
+#footer-separator
+{
+  width: 100%;
+  height: 33px;
+  background: url('../images/footer-bar.png') center top repeat-x transparent;
+}
+
+#footer-logo
+{
+  width: 34px;
+  height: 33px;
+  margin: 0px auto;
+  background: url('../images/footer-icon-white.png') 0px 3px repeat-x transparent;
+  
 }
 
 /* Footer */

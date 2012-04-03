@@ -61,6 +61,11 @@
       
       <div id="navigation">
         <?php print theme('grid_block', $primary_links_tree, 'primary-menu'); ?>
+        <?php if ($islandora_solr_search_simple): ?>
+          <div class="islandora-solr-search-simple">
+            <?php print $islandora_solr_search_simple; ?>
+          </div>
+        <?php endif; ?>
       </div>
     
     </div><!-- /header-group -->
@@ -103,12 +108,15 @@
         <?php endif; ?>
       </div><!-- /main-group -->
     </div><!-- /main -->
-
-    <?php if ($footer): ?>
+    
     <div id="footer" class="footer row <?php print $grid_width; ?>">
-      <?php print $footer; ?>
+      <div id="footer-separator">
+        <div id="footer-logo"></div>
+      </div>
+      <?php if ($footer): ?>
+        <?php print $footer; ?>
+      <?php endif; ?>
     </div><!-- /footer -->
-    <?php endif; ?>
 
     <?php if ($footer_message): ?>
     <div id="footer-message" class="footer-message row <?php print $grid_width; ?>">

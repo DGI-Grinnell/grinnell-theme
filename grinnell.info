@@ -8,6 +8,8 @@ engine = phptemplate
 stylesheets[all][] = css/fusion-starter-lite-style.css
 stylesheets[all][] = css/grinnell.css
 
+scripts[] = js/script.js
+
 regions[sidebar_first] = sidebar first
 regions[sidebar_last] = sidebar last
 regions[header] = header
