@@ -27,6 +27,10 @@ X Shortcut icon
 X Primary links
 X Secondary links 
 
+Custom Grinnell theme settings:
+- Enable contact form in footer
+- Enable Islandora simple search
+
 
 Notes:
 ------
@@ -35,7 +39,6 @@ Notes:
 To do:
 ------
 
-- theme setting which enables the islandora search form
 - color module integration
 -- link color
 -- search button color(s)

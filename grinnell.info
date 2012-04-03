@@ -26,6 +26,10 @@ settings[sidebar_layout] = sidebars-split
 settings[sidebar_first_width] = 2
 settings[sidebar_last_width] = 2
 
+; Default Grinnell theme settings
+settings[contact_form] = 1
+settings[islandora_solr] = 1
+
 ; Widths for 12 column, 960px/fluid grid
 skinr[grid12-width][title] = Width (12 column grid)
 skinr[grid12-width][type] = select
