@@ -41,3 +41,4 @@ To do:
 -- search button color(s)
 - theme setting which enables the contact form in the footer
 - general theming
+- theme setting to upload a custom banner (use custom icon as banner?)
