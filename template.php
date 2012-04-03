@@ -48,7 +48,7 @@ function _grinnell_contact_form() {
   
   // pull down link
   $output .= '<div class="contact-form-link-wrapper">';
-  $output .= l($contact_full_string, '#', array('attributes' => array('class' => 'closed')));
+  $output .= l($contact_full_string, '', array('attributes' => array('class' => 'closed')));
   $output .= '</div>';
   
   // Add the string as a js setting
