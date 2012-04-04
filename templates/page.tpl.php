@@ -135,6 +135,9 @@
     </div><!-- /footer-message -->
     <?php endif; ?>
   </div><!-- /page -->
+  <?php if ($color_override): ?>
+    <?php print $color_override; ?>
+  <?php endif; ?>
   <?php print $closure; ?>
 </body>
 </html>

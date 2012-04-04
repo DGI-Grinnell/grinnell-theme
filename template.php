@@ -30,6 +30,10 @@ function grinnell_preprocess_page(&$variables) {
     $variables['banner'] = $base_path . theme_get_setting('banner_path');
   }
   
+  // check if the color is overridden
+  if (theme_get_setting('use_color') == 1 AND theme_get_setting('color_override')) {
+    $variables['color_override'] = _grinnell_color_override(theme_get_setting('color_override'));
+  }
   
   //dsm($variables);
   
@@ -38,7 +42,10 @@ function grinnell_preprocess_page(&$variables) {
 }
 
 
-
+/**
+ *
+ * @return Rendered contact form + wrappers
+ */
 function _grinnell_contact_form() {
   // set string for contact pull down string
   $contact_string = t('Grinnell College Contact Information');
@@ -61,6 +68,23 @@ function _grinnell_contact_form() {
   
   // Add the string as a js setting
   //drupal_add_js(array('grinnell-theme' => array('contact_string' => $contact_string) ), 'setting');
+  
+  return $output;
+}
+
+
+
+/**
+ *
+ * @param type $color 
+ * @return Inline css string
+ */
+function _grinnell_color_override($color) {
+  $output = '
+  <style type="text/css">
+    a,a.active,#secondary-menu ul li a.active,#primary-menu ul li a.active { color: ' . $color . '}
+    #navigation .islandora-solr-search-simple .form-submit, #navigation .islandora-solr-search-simple .form-submit:active { background-color: ' . $color . ' }
+  </style>';
   
   return $output;
 }

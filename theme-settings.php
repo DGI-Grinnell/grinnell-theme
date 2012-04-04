@@ -16,6 +16,7 @@ function grinnell_settings($saved_settings) {
   $defaults = array(
     'contact_form' => 1,
     'islandora_solr' => 1,
+    'color_override' => '#cf2c27',
   );
 
   // Merge the saved variables and their default values
@@ -50,7 +51,7 @@ function grinnell_settings($saved_settings) {
   );
   $form['grinnell']['banner']['use_banner'] = array(
     '#type' => 'checkbox',
-    '#title' => t('Use a banner.'),
+    '#title' => t('Use a banner'),
     '#default_value' => $settings['use_banner'],
   );
   $form['grinnell']['banner']['banner_path'] = array(
@@ -64,6 +65,37 @@ function grinnell_settings($saved_settings) {
     '#type' => 'file',
     '#title' => t('Upload banner image'),
   );
+  
+  
+  // Add Farbtastic color picker
+  drupal_add_css('misc/farbtastic/farbtastic.css');
+  drupal_add_js('misc/farbtastic/farbtastic.js');
+
+  $form['grinnell']['color'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Color'),
+    '#description' => t("Override the color of links and the islandora solr submit button."),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+  $form['grinnell']['color']['use_color'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Override color'),
+    '#default_value' => $settings['use_color'],
+  );
+  $form['grinnell']['color']['color_override'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Color override'),
+    '#default_value' => $settings['color_override'],
+    '#description' => '<div id="colorpicker"></div>' .
+      "<script type='text/javascript'>
+        $(document).ready(function() {
+          $('#colorpicker').farbtastic('#edit-color-override');
+        });
+       </script>",
+  );
+
+  
   
   $form['#submit'][] = 'grinnell_settings_submit';
   $form['grinnell']['banner']['banner_upload']['#element_validate'][] = 'grinnell_settings_submit';
