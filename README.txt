@@ -27,10 +27,16 @@ X Shortcut icon
 X Primary links
 X Secondary links 
 
-Custom Grinnell theme settings:
-- Enable contact form in footer
-- Enable Islandora simple search
+Fusion settings:
+- you can choose a fixed or fluid layout and set the width of the sidebars
+under: Fusion theme settings > General settings > Layout
 
+Custom Grinnell theme settings:
+- Enable contact form in footer (enable contact module)
+- Enable Islandora simple search (enable islandora_solr_search)
+- Upload custom banner (replaces logo and site name)
+- Ability to stretch banner to full width
+- Override color of links and the islandora solr search button
 
 Notes:
 ------
@@ -39,7 +45,3 @@ Notes:
 To do:
 ------
 
-- color module integration
--- link color
--- search button color(s)
-- general theming

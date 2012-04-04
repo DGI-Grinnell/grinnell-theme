@@ -30,6 +30,11 @@ function grinnell_preprocess_page(&$variables) {
     $variables['banner'] = $base_path . theme_get_setting('banner_path');
   }
   
+  // check  if banner needs to be stretched to full width AND if the banner is required
+  if (theme_get_setting('stretch_banner') == 1 AND theme_get_setting('use_banner') == 1) {
+    $variables['body_classes'] .= ' stretch-banner';
+  }
+  
   // check if the color is overridden
   if (theme_get_setting('use_color') == 1 AND theme_get_setting('color_override')) {
     $variables['color_override'] = _grinnell_color_override(theme_get_setting('color_override'));

@@ -54,6 +54,12 @@ function grinnell_settings($saved_settings) {
     '#title' => t('Use a banner'),
     '#default_value' => $settings['use_banner'],
   );
+  $form['grinnell']['banner']['stretch_banner'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Stretch banner'),
+    '#default_value' => $settings['stretch_banner'],
+    '#description' => t('Stretch the banner to full width (100%). This could be useful when the banner is 960px wide and the layout mode is fluid. Or when the banner is a bit smaller than 960px wide and needs to be stretched to full width.')
+  );
   $form['grinnell']['banner']['banner_path'] = array(
     '#type' => 'textfield',
     '#title' => t('Path to banner'),

@@ -207,6 +207,11 @@ a.grinnell-home
   float: left;
 }
 
+.stretch-banner #banner img
+{
+  width: 100%;
+}
+
 /* Navigation */
 
 #navigation
