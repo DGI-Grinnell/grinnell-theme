@@ -41,6 +41,53 @@ function grinnell_settings($saved_settings) {
     '#description' => t('Enables the Islandora solr simple search form in the navigation bar. This requires islandora_solr_search to be enabled.')
   );
 
+  $form['grinnell']['banner'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Banner'),
+    '#description' => t("A banner image replaces the default logo and site name."),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+  $form['grinnell']['banner']['use_banner'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Use a banner.'),
+    '#default_value' => $settings['use_banner'],
+  );
+  $form['grinnell']['banner']['banner_path'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Path to banner'),
+    '#default_value' => $settings['banner_path'],
+    '#description' => t('Use a relative path without a prefix slash when not using the upload form below.')
+  );
+
+  $form['grinnell']['banner']['banner_upload'] = array(
+    '#type' => 'file',
+    '#title' => t('Upload banner image'),
+  );
+  
+  $form['#submit'][] = 'grinnell_settings_submit';
+  $form['grinnell']['banner']['banner_upload']['#element_validate'][] = 'grinnell_settings_submit';
+  
+  
   // Return the additional form widgets
   return $form;
+}
+
+/**
+* Capture theme settings submissions and update uploaded image
+*/
+function grinnell_settings_submit($form, &$form_state) {
+  // Check for a new uploaded file, and use that if available.
+  if ($file = file_save_upload('banner_upload')) {
+    $parts = pathinfo($file->filename);
+    $filename = (! empty($key)) ? str_replace('/', '_', $key) .'_banner.'. $parts['extension'] : 'banner.'. $parts['extension'];
+
+    // The image was saved using file_save_upload() and was added to the
+    // files table as a temporary file. We'll make a copy and let the garbage
+    // collector delete the original upload.
+    if (file_copy($file, $filename)) {
+      $_POST['use_banner'] = $form_state['values']['use_banner'] = TRUE;
+      $_POST['banner_path'] = $form_state['values']['banner_path'] = $file->filepath;
+    }
+  }
 }

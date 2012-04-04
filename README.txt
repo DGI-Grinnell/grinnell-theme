@@ -42,5 +42,4 @@ To do:
 - color module integration
 -- link color
 -- search button color(s)
-- theme setting to upload a custom banner (use custom icon as banner?)
 - general theming

@@ -35,23 +35,29 @@
       
       <?php print theme('grid_block', $search_box, 'search-box'); ?>
 
-      <?php if ($logo || $site_name || $site_slogan): ?>
+      <?php if ($logo || $site_name || $site_slogan || $banner): ?>
       <div id="header-site-info" class="header-site-info block">
         <div id="header-site-info-inner" class="header-site-info-inner inner">
-          <?php if ($logo): ?>
-          <div id="logo">
-            <a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-          </div>
-          <?php endif; ?>
-          <?php if ($site_name || $site_slogan): ?>
-          <div id="site-name-wrapper" class="clearfix">
-            <?php if ($site_name): ?>
-            <span id="site-name"><a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></span>
+          <?php if ($banner): ?>
+            <div id="banner">
+              <a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img src="<?php print $banner; ?>" alt="<?php print t('Home'); ?>" /></a>
+            </div>
+          <?php elseif ($logo || $site_name || $site_slogan): ?>
+            <?php if ($logo): ?>
+            <div id="logo">
+              <a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+            </div>
             <?php endif; ?>
-            <?php if ($site_slogan): ?>
-            <span id="slogan"><?php print $site_slogan; ?></span>
+            <?php if ($site_name || $site_slogan): ?>
+            <div id="site-name-wrapper" class="clearfix">
+              <?php if ($site_name): ?>
+              <span id="site-name"><a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></span>
+              <?php endif; ?>
+              <?php if ($site_slogan): ?>
+              <span id="slogan"><?php print $site_slogan; ?></span>
+              <?php endif; ?>
+            </div><!-- /site-name-wrapper -->
             <?php endif; ?>
-          </div><!-- /site-name-wrapper -->
           <?php endif; ?>
         </div><!-- /header-site-info-inner -->
       </div><!-- /header-site-info -->

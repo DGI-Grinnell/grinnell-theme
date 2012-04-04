@@ -181,6 +181,31 @@ a.grinnell-home
   margin: 30px 0px 0px 20px;
 }
 
+.custom-banner #header-site-info
+{
+  height: auto;
+  background: none;
+}
+
+.custom-banner #header-site-info-inner
+{
+  margin: 0px 0px 0px 0px;
+}
+
+.custom-banner #banner
+{
+  
+}
+
+.custom-banner #banner a
+{
+  
+}
+
+.custom-banner #banner img
+{
+  float: left;
+}
 
 /* Navigation */
 

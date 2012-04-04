@@ -8,6 +8,8 @@
  * template_preprocess_page()
  */
 function grinnell_preprocess_page(&$variables) {
+  // base path
+  global $base_path;
   
   // link and logo to grinnell college site
   $variables['grinnell_home'] = l(t('Grinnell College'), 'http://www.grinnell.edu/', array('attributes' => array('class' => 'grinnell-home', 'title' => t('Grinnell College'))));
@@ -20,6 +22,12 @@ function grinnell_preprocess_page(&$variables) {
   // check if the option is checked and if islandora_solr_search is enabled
   if (theme_get_setting('contact_form') == 1 AND module_exists('contact')) {
     $variables['contact_form'] = _grinnell_contact_form();
+  }
+  
+  // check if custom banner is required and if banner is added
+  if (theme_get_setting('use_banner') == 1 AND theme_get_setting('banner_path')) {
+    $variables['body_classes'] .= ' custom-banner';
+    $variables['banner'] = $base_path . theme_get_setting('banner_path');
   }
   
   
