@@ -1,0 +1,183 @@
+/* Custom css for the lasr project */
+
+#scholar-search-results-form > div > div
+{
+  width: 100%;
+}
+
+.page-islandora h3.search-title
+{
+  display: none;
+}
+
+
+/* Front page customizations */
+
+.front h1
+{
+  font-size: 160%;
+}
+
+
+.front #sidebar-first
+{
+  width: 33.33%;
+  
+/*   background: #efefef; */
+}
+
+.front #main-group
+{
+  width: 66.67%;
+}
+
+.front #content-group
+{
+  width: 50% !important;
+  
+/*   background: #efefef; */
+}
+
+.front #sidebar-last
+{
+  width: 50% !important;
+  
+/*   background: #efefef; */
+}
+
+
+.front #sidebar-first .block,
+.front #sidebar-last .block
+{
+  width: 100%;
+}
+
+
+#islandora-extended-search-terms h3.search-title
+{
+  display: none;
+}
+
+#islandora-extended-search-form div.form-item
+{
+  width: 110px;
+}
+
+.grid-type-fluid #islandora-extended-search-form div.form-item
+{
+  width: 35%;
+}
+
+
+
+
+.views_slideshow_singleframe_controls .views_slideshow_singleframe_previous
+{
+  float: left;
+}
+
+.views_slideshow_singleframe_controls .views_slideshow_singleframe_next
+{
+  float: right;
+}
+
+.views_slideshow_singleframe_controls
+{
+  position: relative;
+  top: 18px;
+}
+
+.views-slideshow-controls-bottom
+{
+  margin: -18px 0px 0px 0px;
+}
+
+.views_slideshow_singleframe_pager
+{
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.views_slideshow_singleframe_pager .activeSlide a
+{
+  color: #000;
+}
+
+.grid-type-960.front #main
+{
+  padding: 10px 0px 10px 0px;
+  background: url('../images/faux-columns.jpg') top center repeat-y transparent;
+}
+
+#main
+{
+  margin-bottom: 10px;
+}
+
+#block-views-slideshow-block_1
+{
+  padding: 0px 5px;
+}
+
+.view-slideshow img
+{
+
+}
+
+
+/* Solr */
+
+#block-islandora_solr_search-current_query
+{
+
+}
+
+#block-islandora_solr_search-basic_facets
+{
+
+}
+
+#block-islandora_solr_search-basic_facets ul,
+#block-islandora_solr_search-current_query ul
+{
+  margin: 0px 0px 0px 0px;
+  padding: 10px 10px 10px 10px;
+  background: #efefef;
+  
+  list-style: none;
+  list-style-image: none;
+}
+
+#block-islandora_solr_search-basic_facets ul li,
+#block-islandora_solr_search-current_query ul li
+{
+  list-style: none;
+  list-style-image: none;
+}
+
+#block-islandora_solr_search-basic_facets ul li a
+{
+
+}
+
+#block-islandora_solr_search-basic_facets ul li a:hover
+{
+
+}
+
+#block-islandora_solr_search-basic_facets .islandora_solr_search_facet
+{
+  float: left;
+  margin: 10px 0px 0px 0px;
+  width: 100%;
+}
+
+#block-islandora_solr_search-basic_facets .shown-toggle
+{
+
+}
+
+
+
+

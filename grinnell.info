@@ -7,6 +7,7 @@ engine = phptemplate
 
 stylesheets[all][] = css/fusion-starter-lite-style.css
 stylesheets[all][] = css/grinnell.css
+stylesheets[all][] = css/lasr.css
 
 scripts[] = js/script.js
 
