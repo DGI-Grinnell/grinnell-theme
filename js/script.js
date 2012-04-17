@@ -16,26 +16,28 @@ Drupal.behaviors.islandoraSearchVal = function (context) {
   });
 };
 
+
 // Footer contact form slide functionality
 Drupal.behaviors.contactToggle = function (context) {
   
-  var contactString = Drupal.t('Grinnell College Contact Information');
-  var contactStringUp = '^ ' + contactString + ' ^';
-  var contactStringDown = 'v ' + contactString + ' v';
-  
-  $('.contact-form-link-wrapper a', context).click(function (e) {
-    $('#contact-form-drawer').slideToggle('normal');
+  if (!$('#contact-form-drawer').hasClass('processed')) {
+    var contactString = Drupal.t('Grinnell College Contact Information');
+    var contactStringUp = '^ ' + contactString + ' ^';
+    var contactStringDown = 'v ' + contactString + ' v';
     
-    if ($(this).html() == contactStringUp) {
-      $(this).html(contactStringDown);
-    }
-    else {
-      $(this).html(contactStringUp);
-    }
-    
-    e.preventDefault();
-  });
-  
-  
-  
+    $('.contact-form-link-wrapper a', context).click(function (e) {
+      $('#contact-form-drawer').slideToggle('normal');
+      
+      if ($(this).html() == contactStringUp) {
+        $(this).html(contactStringDown);
+      }
+      else {
+        $(this).html(contactStringUp);
+      }
+      
+      e.preventDefault();
+    });
+
+    $('#contact-form-drawer').addClass('processed');
+  }
 };
