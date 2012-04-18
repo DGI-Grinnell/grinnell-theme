@@ -180,4 +180,11 @@
 
 
 
+/* Hide 'Manage Repository' link for anonymous users */
+
+.not-logged-in .menu-805
+{
+  display: none;
+}
+
 
