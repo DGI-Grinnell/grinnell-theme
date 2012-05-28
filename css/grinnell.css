@@ -407,33 +407,33 @@ ul.tabs li a
 
 /* Footer separator */
 
-#footer-contact
+.footer-contact
 {
   width: 100%;
 }
 
-#footer-contact #contact-form-drawer
+.footer-contact #contact-form-drawer
 {
   display: none;
 }
 
-#footer-contact .contact-form-link-wrapper
+.footer-contact .contact-form-link-wrapper
 {
   width: 100%;
   text-align: center;
 }
 
-#footer-contact .contact-form-link-wrapper a
+.footer-contact .contact-form-link-wrapper a
 {
   
 }
 
-#footer-contact .form-item
+.footer-contact .form-item
 {
 
 }
 
-#footer-contact #edit-message-wrapper
+.footer-contact #edit-message-wrapper
 {
   
 }
