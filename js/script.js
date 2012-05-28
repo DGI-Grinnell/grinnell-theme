@@ -41,3 +41,17 @@ Drupal.behaviors.contactToggle = function (context) {
     $('#contact-form-drawer').addClass('processed');
   }
 };
+
+
+$('document').ready(function() {
+  // if there's an error on the contact form ...
+  var errorCount = $('#contact-form-drawer .error').length;
+  if (errorCount > 0) {
+    // expand it
+    $('.contact-form-link-wrapper a').click();
+    // scroll towards the form
+    $('html, body').animate({ scrollTop: $("#contact-form-drawer").offset().top }, 500);
+    // Move the error messages above the form
+    $('#contact-form-drawer .form-item:first').before($('div.messages.error'));
+  }
+});
