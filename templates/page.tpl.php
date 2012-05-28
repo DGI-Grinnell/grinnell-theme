@@ -116,9 +116,9 @@
     </div><!-- /main -->
     
     <div id="footer" class="footer row <?php print $grid_width; ?>">
-      <?php if ($contact_form): ?>
+      <?php if ($footer_contact): ?>
         <div id="footer-contact">
-          <?php print $contact_form; ?>
+          <?php print $footer_contact; ?>
         </div>
       <?php endif; ?>
       <div id="footer-separator">
