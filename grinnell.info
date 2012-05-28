@@ -15,6 +15,7 @@ regions[sidebar_first] = sidebar first
 regions[sidebar_last] = sidebar last
 regions[header] = header
 regions[content] = content
+regions[footer_contact] = footer contact
 regions[footer] = footer
 
 ; Default theme settings
