@@ -430,7 +430,7 @@ ul.tabs li a
 
 .footer-contact .form-item
 {
-
+  display: block;
 }
 
 .footer-contact #edit-message-wrapper
